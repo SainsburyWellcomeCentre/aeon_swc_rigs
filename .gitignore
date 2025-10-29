@@ -1,4 +1,9 @@
+# Bonsai
 obj/
 bin/
 .bonsai/*
 !.bonsai/Bonsai.config
+
+# Python
+*.egg-info/
+__pycache__/
