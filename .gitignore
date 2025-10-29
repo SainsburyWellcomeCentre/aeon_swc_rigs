@@ -1,0 +1,4 @@
+obj/
+bin/
+.bonsai/*
+!.bonsai/Bonsai.config
