@@ -20,3 +20,16 @@ class LightController(BaseSchema):
         "where each row represents one whole minute and the red, cold white"
         "and warm white, light levels set for that minute.",
     )
+
+
+class WeightScale(Device):
+    """Configures acquisition functionality for automated habitat weighing scales."""
+
+    port_name: str = Field(examples=["COM"], description="The name of the device serial port.")
+    filter_window: int = Field(
+        default=40, description="Sliding window size of the weight linear regression filter."
+    )
+    weight_baseline_refactory_period: float = Field(
+        default=5,
+        description="The time between consecutive weight baseline when subject in center of habitat in seconds.",
+    )
