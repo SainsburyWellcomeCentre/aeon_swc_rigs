@@ -3,10 +3,10 @@ from pathlib import Path
 from typing import Annotated, List, Union
 
 from pydantic import Field
-from swc.aeon_rigs.base import BaseSchema
-from swc.aeon_rigs.foraging import UndergroundFeeder
-from swc.aeon_rigs.video import SpinnakerCamera
-from swc.aeon_rigs.harp import HarpClockSynchronizer, HarpTimestampGeneratorGen3
+from swc.aeon.rigs.base import BaseSchema
+from swc.aeon.rigs.foraging import UndergroundFeeder
+from swc.aeon.rigs.video import SpinnakerCamera
+from swc.aeon.rigs.harp import HarpClockSynchronizer, HarpTimestampGeneratorGen3
 
 
 class Rig(BaseSchema):
