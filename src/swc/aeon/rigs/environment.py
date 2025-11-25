@@ -31,7 +31,3 @@ class WeightScale(Device):
     filter_window: int = Field(
         default=40, description="Sliding window size of the weight linear regression filter."
     )
-    weight_baseline_refactory_period: float = Field(
-        default=5,
-        description="The time between consecutive weight baseline when subject in center of habitat in seconds.",
-    )
