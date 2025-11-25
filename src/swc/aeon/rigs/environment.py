@@ -3,7 +3,7 @@ from pydantic import Field
 from swc.aeon.rigs.base import BaseSchema, Device
 
 
-class LightController(BaseSchema):
+class LightCycle(BaseSchema):
     """Represents a network client for automated room light control."""
 
     event_socket: str = Field(
